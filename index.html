@@ -10,32 +10,90 @@
     </head>
     <style>
         *{
-            background-color: black;
-            color: white; padding: auto; margin: auto;
+            background-color: black; color: white;
+            
         }
 
         #NavBar{
-            display: flex; justify-content: center; align-items: center; 
+            display: flex; justify-content: space-between; align-items:center; padding: 20px; pointer-events: none;
         }
 
-        #NavBar li{ color: yellow; font-family: fantasy;
+        #NavBar li{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             list-style: none;
         
         } 
+         
 
         #NavBar #Logo{
             display: flex;
-            flex-direction: column; color: yellow; margin: 10px; padding: 5px; 
+            flex-direction: column; color: yellow; margin: 0px; padding: 10px; text-align: center; line-height: 0px;
+        }
+         
+        #Logo h2{
+            margin-bottom: 5px;
+        }
+        #NavBar #Logo span{
+            color:orange;
         }
 
-        #NavBar #Logo span{
-            color: yellow;
+        #Login{
+            border-style:ridge; border: 1px solid orange; border-radius: 5px; color: orange; font-weight: 800; cursor: pointer; 
+        }
+        
+        #LoginWelcome  { display: none; flex-direction: column; gap: 10px; text-align: center; align-items: center;  box-shadow: 0 0 10px lightblue, 0 0 20px blue, 0 0 40px lightblue; padding: 10px;
+               position: fixed; top: 40%; left: 40%;
+        border-radius: 10px; border: none; height: auto;
+        }
+
+        li:hover {
+            cursor: pointer; font-weight: 800; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px red;
         }
 
         #Home{
-            display: flex; flex-direction: column; gap: 20px;
+            display: grid;gap: 50px; filter: blur(20px); margin-top: 50px; pointer-events: none; position: relative; transition: filter 0.5s ease; align-items: center;  display: grid;
+    grid-template-columns: repeat(2, 1fr); 
         }
 
+        
+
+        #Home iframe{
+            border: 2px solid white; border-radius: 25px; box-shadow:0 0 10px lightblue,0 0 20px lightblue;
+        }
+       
+        #AgeVerify { display:block;
+            position: fixed;  z-index: 9999; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          width: 300px;
+            align-items: center; text-align: center;
+            border: 1px solid black; border-radius: 25px;  height: 300px; margin: auto; background:transparent; box-shadow: 0 0 10px lightslategrey, 0 0 20px lightslategray, 0 0 40px lightslategrey
+        }
+
+        #AgeVerify h4{
+            background: transparent;
+        }
+
+        #AgeVerify h3{
+            background: transparent;
+        }
+
+        #AgeVerify h4 span{ color: red;
+            background: transparent;
+        }
+
+        button{
+            width: 70px;
+        }
+        
+        #Yes { font-size:30px;  border: 1px solid lightblue ; border-radius: 15px;
+            background-color: transparent; border-style: dashed; font-weight: 600;
+        }
+         #No{font-size:30px;  border: 1px solid lightblue ; border-radius: 15px; background-color: transparent; border-style: dashed; margin-left: 50px;
+            font-weight: 600;
+         }
+         
     </style>
     <body>
         <div id="NavBar">
@@ -44,38 +102,59 @@
                 <h2>CORN<span> HUB</span></h2>
                 <p>Watch It Alone</p>
                 </div>
-
             <li>Home</li>
             <li>Notification</li>
             <li>New Subscribers</li>
             <li>Profile</li>
-        <button id="Login or Signup">Log In</button>
+        <button id="Login">Log In</button>
         </div>
         <div id="Home">
-            <iframe src="https://www.pornhub.com/embed/6942653d79d6d" frameborder="0" width="560" height="315" scrolling="no" allowfullscreen></iframe>
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src="https://www.pornhub.com/view_video.php?viewkey=6942653d79d6d"
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-            <iframe src=""
-            frameborder="0" width="600" height="300" scrolling="no" allowfullscreen></iframe>
-
-
-        </div>
-        
-
+            
+            <iframe src="https://www.pornhub.com/embed/6942653d79d6d" scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/693d4058f1758"  scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/69404bb7766f2"  scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/6928d4b56d7ef"  scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/68cd37c9ab62b"  scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/686e6c770b55e"  scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/68ee622a360a3"  scrolling="no" allowfullscreen></iframe>
             
         </div>
+
+        <div id="AgeVerify">
+            <h3>Verify Your Age</h3>
+            <h4>Are You <span>18+</span></h4>
+        
+            <button id="Yes">Yes</button>
+            <button id="No">No</button>
+        </div>
+        <form id="LoginWelcome">
+            <input name="email" placeholder="Username" required>
+            <input name="password" placeholder="Password" required>
+            <button type="submit" class="LoginClick">Login</button>
+        </form>
+        </div>
+        <script>
+            const Yes = document.getElementById('Yes');
+            const No = document.getElementById('No');
+            const LogIn = document.getElementById('Login');
+            const LoginForm = document.getElementById('LoginWelcome');
+            const Home = document.getElementById('Home');
+
+            Login.addEventListener('click', () => {
+                LoginForm.style.display = 'flex';
+                Home.style.display = 'none';
+
+            })
+
+            Yes.addEventListener('click',  () => {
+                document.getElementById("Home").style.filter = 'blur(0)';
+                 document.getElementById("Home").style.pointerEvents = "auto";
+                document.getElementById('AgeVerify').style.display = 'none';
+                document.getElementById('NavBar').style.pointerEvents = 'auto';
+            });
+
+            No.addEventListener('click', () => {
+            window.location.href = 'https://youtube.com'; });
+        </script>
     </body>
 </HTML>
