@@ -15,18 +15,23 @@
         }
 
         #NavBar{
-            display: flex; justify-content: space-between; align-items:center; padding: 20px; pointer-events: none;
+            display: flex; justify-content: space-between; align-items:center; padding:10px 20px; pointer-events: none;flex-wrap: wrap;
         }
 
-        #NavBar li{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            list-style: none;
+        #NavBar ul{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style: none; display: flex; gap: 20px; flex-wrap: wrap;
         
         } 
+     
+          
+        #NavBar ul li{
+            cursor: pointer;
+        }
          
 
         #NavBar #Logo{
             display: flex;
-            flex-direction: column; color: yellow; margin: 0px; padding: 10px; text-align: center; line-height: 0px;
+            flex-direction: column; color: yellow; gap: 3px; text-align: center; 
         }
          
         #Logo h2{
@@ -102,10 +107,12 @@
                 <h2>CORN<span> HUB</span></h2>
                 <p>Watch It Alone</p>
                 </div>
+                <ul>
             <li>Home</li>
             <li>Notification</li>
             <li>New Subscribers</li>
             <li>Profile</li>
+            </ul>
         <button id="Login">Log In</button>
         </div>
         <div id="Home">
