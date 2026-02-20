@@ -15,23 +15,18 @@
         }
 
         #NavBar{
-            display: flex; justify-content: space-between; align-items:center; padding:10px 20px; pointer-events: none;flex-wrap: wrap;
+            display: flex; justify-content: space-between; align-items:center; padding: 20px; pointer-events: none;
         }
 
-        #NavBar ul{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            list-style: none; display: flex; gap: 20px; flex-wrap: wrap;
+        #NavBar li{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style: none;
         
         } 
-     
-          
-        #NavBar ul li{
-            cursor: pointer;
-        }
          
 
         #NavBar #Logo{
             display: flex;
-            flex-direction: column; color: yellow; gap: 3px; text-align: center; 
+            flex-direction: column; color: yellow; margin: 0px; padding: 10px; text-align: center; line-height: 0px;
         }
          
         #Logo h2{
@@ -46,7 +41,8 @@
         }
         
         #LoginWelcome  { display: none; flex-direction: column; gap: 10px; text-align: center; align-items: center;  box-shadow: 0 0 10px lightblue, 0 0 20px blue, 0 0 40px lightblue; padding: 10px;
-               position: fixed; top: 40%; left: 40%;
+               position: fixed; top: 50%; left: 50%;
+               transform: translate(-50%, -50%);
         border-radius: 10px; border: none; height: auto;
         }
 
@@ -71,9 +67,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-          width: 300px;
+          max-width: 300px;
             align-items: center; text-align: center;
-            border: 1px solid black; border-radius: 25px;  height: 300px; margin: auto; background:transparent; box-shadow: 0 0 10px lightslategrey, 0 0 20px lightslategray, 0 0 40px lightslategrey
+            border: 1px solid black; border-radius: 25px;  max-height: 300px; margin: auto; background:transparent; box-shadow: 0 0 10px lightslategrey, 0 0 20px lightslategray, 0 0 40px lightslategrey
         }
 
         #AgeVerify h4{
@@ -88,8 +84,12 @@
             background: transparent;
         }
 
-        button{
+       #AgeVerify button{
             width: 70px;
+        }
+
+        #AgeVerify button:hover{
+            box-shadow: 0 0 5px lightblue, 0 0 7px lightcyan;
         }
         
         #Yes { font-size:30px;  border: 1px solid lightblue ; border-radius: 15px;
@@ -97,6 +97,28 @@
         }
          #No{font-size:30px;  border: 1px solid lightblue ; border-radius: 15px; background-color: transparent; border-style: dashed; margin-left: 50px;
             font-weight: 600;
+         }
+
+         @media (max-width: 600px) {
+
+            #NavBar { font-size: 7px; padding: 1px; display: flex; justify-content: space-between;
+
+            }
+
+            #AgeVerify {
+                position: fixed;
+                top:30%; left: 50%;
+                transform: translate(-50%, -50%); font-size:20px; height: 200px; width: 200px;  align-items: center;
+            }
+
+            #AgeVerify button { max-width: 60px;
+                font-size: 20px;
+
+            }
+            
+            #Home iframe{
+                height: 150px; width: 150px;
+            }
          }
          
     </style>
@@ -107,12 +129,11 @@
                 <h2>CORN<span> HUB</span></h2>
                 <p>Watch It Alone</p>
                 </div>
-                <ul>
-            <li>Home</li>
+                
+            <li id="HomeNav">Home</li>
             <li>Notification</li>
             <li>New Subscribers</li>
             <li>Profile</li>
-            </ul>
         <button id="Login">Log In</button>
         </div>
         <div id="Home">
@@ -147,11 +168,9 @@
             const LoginForm = document.getElementById('LoginWelcome');
             const Home = document.getElementById('Home');
 
-            Login.addEventListener('click', () => {
-                LoginForm.style.display = 'flex';
-                Home.style.display = 'none';
+            const HomePage = document.getElementById('HomeNav');
 
-            })
+
 
             Yes.addEventListener('click',  () => {
                 document.getElementById("Home").style.filter = 'blur(0)';
@@ -162,6 +181,20 @@
 
             No.addEventListener('click', () => {
             window.location.href = 'https://youtube.com'; });
+
+            
+            HomePage.addEventListener('click', () =>
+            {
+                Home.style.display = 'grid';
+                LoginForm.style.display = 'none';
+            });
+
+            
+            Login.addEventListener('click', () => {
+                LoginForm.style.display = 'flex';
+                Home.style.display = 'none';
+
+            });
         </script>
     </body>
 </HTML>
