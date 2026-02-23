@@ -1,0 +1,218 @@
+
+        *{
+            background-color: black; color: white;
+            
+        }
+
+        #NavBar{
+            display: flex; justify-content: space-between; align-items:center; padding: 20px; pointer-events: none;
+        }
+
+        #NavBar li{ color: orange; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style: none;
+        
+        } 
+         
+
+        #NavBar #Logo{
+            display: flex;
+            flex-direction: column; color: yellow; margin: 0px; padding: 10px; text-align: center; line-height: 0px;
+        }
+         
+        #Logo h2{
+            margin-bottom: 5px;
+        }
+        #NavBar #Logo span{
+            color:orange;
+        }
+
+        #Login{
+            border-style:ridge; border: 1px solid orange; border-radius: 5px; color: orange; font-weight: 800; cursor: pointer;  }
+
+
+        
+        #LoginWelcome  { display: none; flex-direction: column; gap: 1px; text-align: center; align-items: center;   padding: 10px;
+               position: fixed; top: 50%; left: 50%;
+               transform: translate(-50%, -50%);
+        border-radius: 18%; border: none; height: 300px; justify-content: center; width: 300px;
+        background-color:rgb(88, 83, 74); box-shadow: 0 0 80px lightblue;
+        }
+
+        #LoginWelcome:hover{
+            box-shadow: 0 0 10px peru, 0 0 40px orangered, 0 0 80px orange
+        }
+        
+        #LoginWelcome .LoginCLick:hover{
+            font-size: 40px;
+        }
+
+        #inputbox{
+            position: relative;
+            margin: 20px 0;
+            width: 200px;
+        }
+
+        #inputbox input{
+            width: 100%;
+            font-size: 16px;
+            background-color: white;
+            color: black;
+            transition: border 0.3s; outline: none;
+            border: none;
+            border-radius: 5px; height: 30px;
+
+        }
+        
+         #inputbox input:focus {
+           border: 2px solid orange
+        }
+
+        #inputbox input:valid {
+            border: 2px solid orange; 
+        }
+
+        #inputbox label{
+            position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        pointer-events: none;
+        transition: 0.3s;
+        padding: 0 5px;
+        border: none; outline: none;
+        border-radius: 5px;
+        background-color: white;
+        }
+
+        #inputbox input:focus + label,
+        #inputbox input:valid + label {
+            top: 0px;
+            font-size: 12px;
+            color: orange;
+            z-index: 99999;
+          
+        }
+       
+
+        #LoginWelcome .LoginClick{font-size: 20px; font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 10px; text-align: center;  cursor: pointer; background-color: transparent;padding-bottom: 5px;
+            border: 1px solid orange; color: orange;
+        }
+
+        #LoginWelcome p{
+            background-color: transparent; color: white; font-size: 20px; margin-top: -20px; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; cursor: pointer;
+        }
+
+         #ExtraLogin {
+            color: orange; font-size: 10px;  background: transparent; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px;  align-items: center; 
+        }
+
+        .img{
+            display: flex; justify-content: space-between; background: transparent; gap: 30px;
+        }
+
+        #ExtraLogin p{
+            font-size: 14px; margin-top: 5px; color: orange; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        li:hover {
+            cursor: pointer; font-weight: 800; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px red;
+        }
+
+        #SocialMLogin {
+            display: flex;  gap: 5px; background: transparent; justify-content: space-between; flex-wrap: wrap; flex-direction: column;
+        }
+
+        #SocialMLogin img{ cursor: pointer;
+            width: 20px; height: 20px; background: transparent;
+        }
+
+        #SocialMLogin p {
+            font-size:  15px;
+        }
+
+        #Home{
+            display: flex ; gap: 40px; filter: blur(30px); margin-top: 20px; pointer-events: none;  transition: filter 0.5s ease; align-items: center;   flex-wrap: wrap;      padding: 0px 10px 10px 40px;
+        }
+
+        
+
+        #Home iframe{
+            border: 2px solid white; border-radius: 25px; box-shadow:0 0 10px lightblue,0 0 20px lightblue; width: 40%;
+        }
+       
+        #AgeVerify { display:block;
+            position: fixed;  z-index: 9999; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          max-width: 300px;
+            align-items: center; text-align: center;
+            border: 1px solid black; border-radius: 25px;  max-height: 300px; margin: auto; background:transparent; box-shadow: 0 0 10px lightslategrey, 0 0 20px lightslategray, 0 0 40px lightslategrey
+        }
+
+        #AgeVerify h4{
+            background: transparent;
+        }
+
+        #AgeVerify h3{
+            background: transparent;
+        }
+
+        #AgeVerify h4 span{ color: red;
+            background: transparent;
+        }
+
+       #AgeVerify button{
+            width: 70px;
+        }
+
+        #AgeVerify button:hover{
+            box-shadow: 0 0 5px lightblue, 0 0 7px lightcyan;
+        }
+        
+        #Yes { font-size:30px;  border: 1px solid lightblue ; border-radius: 15px; cursor: pointer;
+            background-color: transparent; border-style: dashed; font-weight: 600;
+        }
+         #No{font-size:30px;  border: 1px solid lightblue ; border-radius: 15px; background-color: transparent; border-style: dashed; margin-left: 50px;
+            font-weight: 600; cursor: pointer;
+         }
+
+         #CreateAcc {
+            display: none; flex-direction: column;
+            gap: 15px; justify-content: center; align-items: center; color: black;
+            
+         }
+
+         #CreateAcc  input{ width: 60%; background-color: white;
+            height: 30px; color: black;
+         }
+          
+         #CreateAcc button{
+            background-color: orange; border: none; border-radius: 15px; outline: none; height: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;
+         }
+         @media (max-width: 600px) {
+
+            #NavBar { font-size: 10px;  display: flex; justify-content: space-between; padding: 0;
+                font-weight: 800;
+
+            }
+
+            #AgeVerify {
+                position: fixed;
+                top:30%; left: 50%;
+                transform: translate(-50%, -50%); font-size:20px; height: 200px; width: 200px;  align-items: center;
+            }
+
+            #AgeVerify button { max-width: 60px;
+                font-size: 20px;
+
+            }
+            
+            #Home iframe{
+                height: 150px; width: 150px;
+            }
+         }
+         
+    
