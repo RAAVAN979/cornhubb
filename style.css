@@ -132,7 +132,7 @@
         }
 
         #Home{
-            display: flex ; gap: 40px; filter: blur(30px); margin-top: 20px; pointer-events: none;  transition: filter 0.5s ease; align-items: center;   flex-wrap: wrap;     
+            display: flex ; gap: 40px; filter: blur(30px); margin-top: 20px; pointer-events: none;  transition: filter 0.5s ease; align-items: center;   flex-wrap: wrap;  padding-left: 50px;   
         }
 
         
@@ -209,6 +209,7 @@
                 font-size: 20px;
 
             }
+                #Home {padding-left: 0px;
             
             #Home iframe{
                 height: 150px; width: 150px;
