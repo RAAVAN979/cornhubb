@@ -39,7 +39,7 @@ const Yes = document.getElementById('Yes');
             CreateBtn.addEventListener('click', () =>
             {
                 Home.style.display = "none";
-                Login.style.display = "none";
+                
                 CreateAcc.style.display = " flex";
                 LoginForm.style.display = "none";
             });
