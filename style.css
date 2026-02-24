@@ -31,11 +31,11 @@
 
 
         
-        #LoginWelcome  { display: none; flex-direction: column; gap: 1px; text-align: center; align-items: center;   padding: 10px;
+        #LoginWelcome  { display: none; flex-direction: column; gap: 10px; text-align: center; align-items: center;   
                position: fixed; top: 50%; left: 50%;
                transform: translate(-50%, -50%);
-        border-radius: 18%; border: none; height: 300px; justify-content: center; width: 300px;
-        background-color:rgb(88, 83, 74); box-shadow: 0 0 80px lightblue;
+        border-radius: 18%; border: none; height: 350px; justify-content: center; width: 350px;
+        background-color:rgb(0, 0, 0); box-shadow: 0 0 80px lightblue;
         }
 
         #LoginWelcome:hover{
@@ -46,10 +46,15 @@
             font-size: 40px;
         }
 
+        #inputB{
+            display: flex; gap: -9px;
+            flex-direction: column;
+        }
+
         #inputbox{
             position: relative;
             margin: 20px 0;
-            width: 200px;
+            width: 200px; display: flex; gap: 10px; flex-direction: column;
         }
 
         #inputbox input{
@@ -98,7 +103,9 @@
         #LoginWelcome .LoginClick{font-size: 20px; font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 10px; text-align: center;  cursor: pointer; background-color: transparent;padding-bottom: 5px;
             border: 1px solid orange; color: orange;
         }
-
+            #Login:hover{
+            box-shadow: 0 0 10px orange, 0 0 20px orangered;
+        }
         #LoginWelcome p{
             background-color: transparent; color: white; font-size: 20px; margin-top: -20px; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; cursor: pointer;
         }
@@ -112,7 +119,7 @@
         }
 
         #ExtraLogin p{
-            font-size: 14px; margin-top: 5px; color: orange; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px; margin-top: 5px; color: orange; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         li:hover {
@@ -132,7 +139,7 @@
         }
 
         #Home{
-            display: flex ; gap: 40px; filter: blur(30px); margin-top: 20px; pointer-events: none;  transition: filter 0.5s ease; align-items: center;   flex-wrap: wrap;  padding-left: 50px;   
+            display: flex ; gap: 40px; filter: blur(30px); margin-top: 20px; pointer-events: none;  transition: filter 0.5s ease; align-items: center;   flex-wrap: wrap;      padding: 0px 10px 10px 40px;
         }
 
         
@@ -180,17 +187,26 @@
          }
 
          #CreateAcc {
-            display: none; flex-direction: column; margin-top: 50px;
+            display: none; flex-direction: column;
             gap: 15px; justify-content: center; align-items: center; color: black;
+            margin-top: 50px;
+            
             
          }
 
          #CreateAcc  input{ width: 60%; background-color: white;
-            height: 30px; color: black;
-         }
+            height: 30px; color: black; outline: none; border: 1px solid orange;  border-radius: 10px; text-align: center;}
           
          #CreateAcc button{
-            background-color: orange; border: none; border-radius: 15px; outline: none; height: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: black;
+            background-color: orange; border: none; border-radius: 15px; outline: none; height: 30px; font-family:monospace; color: black; box-shadow: 0 0 5px orange, 0 0 10px red; font-weight: 600; cursor: pointer;
+         }
+
+         #message{position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: 20%;
+            transform: translate(-50%, -50%); background: transparent; width: 100%;
+            display:none; color:green ; font-weight: 800; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 50px;
          }
          @media (max-width: 600px) {
 
@@ -209,7 +225,6 @@
                 font-size: 20px;
 
             }
-                #Home {padding-left: 0px;
             
             #Home iframe{
                 height: 150px; width: 150px;
